@@ -19,7 +19,7 @@ public class JobController {
 	@Autowired
 	private JobServiceImplementation service;
 	
-	@PostMapping("/postJob")
+	@PostMapping("/post-job")
 	public Job postJob(@RequestBody Job job) {
 		return service.postJob(job);
 	}
